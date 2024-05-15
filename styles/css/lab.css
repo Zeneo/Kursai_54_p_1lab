@@ -1,0 +1,122 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Helvetica Neue", serif;
+  background-color: #333333;
+  text-align: center;
+}
+
+.d-flex {
+  display: flex;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Helvetica Neue", serif;
+  background-color: #333333;
+  text-align: left;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 40px;
+  background-color: #999;
+  color: #fff;
+}
+header .cnt {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 30px;
+  max-width: 1280px;
+  height: 100%;
+}
+header .cnt * {
+  height: 100%;
+  align-content: center;
+}
+header .cnt .funds {
+  text-shadow: 2px 2px 2px #333;
+}
+header .cnt .header-buttons {
+  display: flex;
+  height: 100%;
+  align-content: center;
+}
+header .cnt .header-buttons .shop-btn {
+  justify-content: flex-start;
+  align-content: center;
+  padding: 0 15px;
+  text-shadow: 2px 2px 2px #333;
+  transition: color 200ms ease-in-out, background-color 400ms ease-in-out;
+}
+header .cnt .header-buttons .shop-btn:hover {
+  color: #721c24;
+  cursor: pointer;
+  background-color: #fff;
+}
+
+.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.main {
+  padding: 40px 30px;
+  max-width: 1280px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.main h2 {
+  margin: 15px 5px 1px;
+  color: #ccc;
+  text-transform: uppercase;
+  font-size: 13px;
+}
+.main .cont {
+  box-shadow: inset 4px 4px 2px #333;
+  border-radius: 10px;
+  background-color: #666;
+  min-height: 100px;
+}
+
+.workers-owned {
+  padding: 0 20px 0 0;
+  width: 30%;
+}
+.workers-owned .cont {
+  min-height: 400px;
+  height: calc(100% - 30px);
+}
+
+.right {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+}
+.right .workers-in-search {
+  width: 100%;
+  flex-grow: 1;
+}
+.right .workers-in-search .cont {
+  min-height: 200px;
+  height: calc(100% - 31px);
+}
+.right .inventory {
+  flex-grow: 1;
+  width: 100%;
+}
+.right .inventory .cont {
+  min-height: 200px;
+  height: calc(100% - 31px);
+}
+
+/*# sourceMappingURL=lab.css.map */
